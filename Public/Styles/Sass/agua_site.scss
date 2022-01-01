@@ -1,0 +1,58 @@
+@import '_global_variable';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: $normal-font;
+}
+
+body{
+    background-color: $bone-white;
+}
+
+.delimiter_container{
+    max-width: 1128px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.floating_text_card{
+    background-color: $bone-white;
+    box-shadow: 2px 4px 13px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+// this could be changed
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sections_title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+    font-style: bold;
+    font-size: $font-big;
+}
+
+@media (max-width: 530px){
+    .sections_title{
+        font-size: $font-big-mobile;
+    }
+}
+
+@import "_agua_site_header";
+
+#projects_section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 330px));
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+@import '_project_card'

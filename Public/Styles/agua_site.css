@@ -1,0 +1,165 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.delimiter_container {
+  max-width: 1128px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.floating_text_card {
+  background-color: #f2f2f2;
+  box-shadow: 2px 4px 13px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sections_title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: left;
+  font-style: bold;
+  font-size: 36px;
+}
+
+@media (max-width: 530px) {
+  .sections_title {
+    font-size: 26px;
+  }
+}
+
+header {
+  background-image: url("/Public/Resources/Patron fondo.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(0px 16px 29px rgba(0, 0, 0, 0.25));
+}
+
+header h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+#version_mark {
+  user-select: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: #8c8c8c;
+  font-family: "Roboto", sans-serif;
+}
+
+#profile_pic {
+  display: block;
+  transform: rotate(180deg);
+  height: 450px;
+}
+
+#welcoming {
+  color: #8c8c8c;
+  font-size: 26px;
+  font-style: italic;
+  line-height: 35px;
+}
+
+.welcoming_container {
+  margin-bottom: 160px;
+}
+
+@media (max-width: 530px) {
+  #profile_pic {
+    height: 250px;
+  }
+  header h1 {
+    font-size: 26px;
+  }
+  #welcoming {
+    font-size: 20px;
+  }
+}
+
+#projects_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 330px));
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.project_card {
+  background-color: #ffffff;
+  max-width: 330px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project_card h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.project_card .project_card_img {
+  display: flex;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+  height: 315px;
+  justify-content: center;
+}
+
+.project_card img {
+  width: 100%;
+}
+
+.project_card .project_card_buttons_part {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.project_card .project_card_buttons_part button {
+  font-size: 16px;
+  border-style: none;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 1s;
+  transition: font-size 1s;
+}
+
+.project_card .project_card_buttons_part .project_card_go_btn {
+  background-color: #88B578;
+}
+
+.project_card .project_card_buttons_part .project_card_go_btn:hover {
+  background-color: #b6d68c;
+  font-size: 19px;
+}
+
+.project_card .project_card_buttons_part .project_card_github {
+  background-color: #738AC5;
+  font-size: 24px;
+}
+
+.project_card .project_card_buttons_part .project_card_github:hover {
+  background-color: #85a8dd;
+}
+/*# sourceMappingURL=agua_site.css.map */

@@ -1,0 +1,61 @@
+@import '_global_variable';
+
+header{
+    background-image: url("/Public/Resources/Patron\ fondo.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    filter: drop-shadow(0px 16px 29px rgba(0, 0, 0, 0.25));
+
+    h1{
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: $font-big;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+}
+
+#version_mark{
+    user-select: none;
+    position:fixed;
+    top: 10px;
+    right: 10px;
+    color: $gray;
+    font-family: $roboto;
+}
+
+#profile_pic{
+    display: block;
+    transform: rotate(180deg);
+
+    height: 450px;
+}
+
+#welcoming{
+    color: $gray;
+    font-size: $font-medium;
+    font-style: italic;
+    line-height: 35px;
+}
+
+.welcoming_container{
+    margin-bottom: 160px;
+}
+
+@media (max-width: 530px){
+    #profile_pic{
+        height: 250px;
+    }
+
+    header{
+        h1{
+            font-size: $font-big-mobile;
+        }
+    }
+
+    #welcoming{
+        font-size: $font-medium-mobile;
+    }
+}

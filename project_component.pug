@@ -1,0 +1,15 @@
+mixin project
+    if !attributes.tags
+        - attributes.tags = [];
+
+    a.project(href=attributes.link)
+        if attributes.splash_content
+            div.project__splash= attributes.splash_content
+        else
+            img.project__splash(src=attributes.splash, alt=`${attributes.name} splash image`)
+        div.project__info-cont
+            h3= attributes.name
+            block
+            div.project__tags-cont
+                each tag in attributes.tags
+                    span= tag

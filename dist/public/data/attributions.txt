@@ -1,0 +1,32 @@
+-*-*-*-*-*-*-*-*-*-*ICONS-*-*-*-*-*-*-*-*-*-*
+
+Cake Icon: 
+    link: https://www.svgrepo.com/svg/453308/cake
+    author: Jackhenry Design
+    LICENSE: MIT License
+
+Location Icon:
+    link: https://www.svgrepo.com/svg/532540/location-pin-alt-1
+    author: Dazzle UI
+    LICENSE: CC Attribution License
+
+Google Icons:
+    link: https://about.google/brand-resource-center/logos-list/
+    author and owner: Google LLC
+    LICENSE: I do not know.
+    Permission guide: https://about.google/brand-resource-center/guidance/
+
+Linkedin Icons:
+    link: https://brand.linkedin.com/downloads
+    author: Linkedin
+    LICENSE: I do not know.
+    Permission guide: https://brand.linkedin.com/policies
+
+Github Icon:
+    link: https://github.com/logos
+    author: Github
+    LICENSE: I do not know
+    Permission guide: https://github.com/logos
+    Alternative used: https:https://www.flaticon.com/free-icon/logo_11378785?term=github&page=1&position=20&origin=search&related_id=11378785
+    author: Tahsin Tahll
+    Alternative LICENSE: Flaticon License

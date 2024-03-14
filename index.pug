@@ -1,0 +1,91 @@
+doctype html
+
+include external_imgs_data.pug
+include project_component.pug
+
+html
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(charset="utf-8")
+        title Portfofio Soworksl
+
+        link(rel="stylesheet", href="public/reset.css")
+        link(rel="stylesheet", href="public/main.css")
+
+        //Google fonts
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet")
+
+    body
+        div.body-delegator
+            header
+                img.profile-pic(src="public/images/me.jpeg" alt="Jimy Aguasviva Pic")
+
+                div.titles
+                    h1 Jimy W. Aguasviva R.
+                    b Full Stack Developer
+
+            div.main-btns(onclick="javascript:location.href='https://drive.google.com/file/d/1RjyjyIbihMMZ7M62eoSkkE6poHPe1V43/view?usp=drive_link'")
+                button.main-btn Download Curriculum
+
+
+            div.personal-info-bento
+                div.personal-info-bento__cell.personal-info__summary
+                    p Experienced and versatile autodidactic developer with a fervent passion  for tackling new challenges, particularly within the realms of low-level  programming and Linux systems. With a foundation built on self-directed  learning and a relentless drive for excellence, I thrive in  environments that demand innovative solutions and technical expertise.
+                
+                div.personal-info-bento__cell.personal-info__birth
+                    img.birth-icon(src="public/icons/cake.svg" alt="cake icon")
+                    div.birth__content
+                        span.date-part
+                            strong Day:
+                            br
+                            span 29
+
+                        span.date-part
+                            strong Month:
+                            br
+                            span Jul
+
+                        span.date-part
+                            strong Year:
+                            br
+                            span 2000
+
+                div.personal-info-bento__cell.personal-info__emoji
+                    span.info-bento__cell__emoji &#127758;
+
+                div.personal-info-bento__cell.personal-info__location
+                    img.location-icon(src="public/icons/location.svg" alt="location icon")
+                    p Dominican Republic, Santo Domingo; Alma Rosa II, Club de leones street.
+
+                a.personal-info-bento__cell(href="mailto:jimy.waner11@gmail.com")
+                        img.info-bento__cell__img(src=gmail_icon, alt="gmail icon")
+
+                a.personal-info-bento__cell(href="https://www.linkedin.com/in/jimy-aguasviva-781b32200/")
+                    img.info-bento__cell__img(src=linkedin_icon, alt="linkedin icon")
+
+                a.personal-info-bento__cell(href="https://github.com/soworksl2")
+                    img.info-bento__cell__img(src=github_icon, alt="github icon")
+
+                a.personal-info-bento__cell
+                    span.info-bento__cell__emoji &#128153;
+
+            main
+                h2.sec-title Projects
+
+
+                div.projects-cont
+                    +project(name="Noblivion"
+                            splash_content=String.fromCodePoint(0x1F4CB)
+                            tags=['WIP'] link="https://github.com/soworksl2/noblivion_specification")
+                        p A Todo list specification agnostic to the client, with generic CLI tools for its manipulation.
+
+        footer
+            p this project is under the LICENSE GPL-3.0 and the sorce code can be found <a href="https://github.com/soworksl2/portfolio">HERE</a>
+
+            p Attributions and mentions are <a href="public/data/attributions.txt">HERE</a>
+
+            div.last-contact-info
+                p Made by Jimy Aguasviva (Soworksl)
+                p <a href="mailto:jimy.waner11@gmail.com">jimy.waner11@gmail.com</a>

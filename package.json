@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npx pug index.pug -o dist/ -P",
+    "devbuild": "cp ./public/ ./dev_dist/ -r && npx pug index.pug -o dev_dist/ -P",
+    "build": "cp ./public ./dist/ -r && npx pug index.pug -o dist/ -P",
     "gh-deploy": "npm run build && npx gh-pages -d dist/"
   },
   "keywords": [],
